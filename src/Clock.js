@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class Clock extends React.Component {
 
@@ -9,7 +8,7 @@ class Clock extends React.Component {
     }
   
     componentDidMount() {
-      this.foo = setInterval( //I guess this line just declares and initializes this field every time this method is called? 
+      this.timerId = setInterval( //I guess this line just declares and initializes this field every time this method is called? 
         () => this.tick(), 
         1000
       );
